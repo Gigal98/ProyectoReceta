@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Formulario</title>
 </head>
 <body>
     <header>
-        
+        <h1>Formulario de consultas</h1>
     </header>
     <section>
         <form action="/ingreso" method="post">
             <section class="formus">
-                <input type="text" name="nombre" placeholder="Escriba su nombre">
-                <br>
-                <input type="text" name="nombre" placeholder="Escriba su apellido">
-                <br>
-                <input type="email" name="nombre" placeholder="Escriba su correo">
-                <br>
-                <textarea type="comentario" rows="20" cols="50" placeholder="Escriba su comentario"></textarea>
+                <fieldset>
+                    <legend>Consultas</legend>
+                    <input type="text" name="nombre" placeholder="Escriba su nombre" required>
+                    <br>
+                    <input type="text" name="nombre" placeholder="Escriba su apellido" required>
+                    <br>
+                    <input type="email" name="nombre" placeholder="Escriba su correo" required>
+                    <br>
+                    <p><b>¿Sobre que receta quiere consultar?</b></p>
+                    <input type="radio" name="auto" value="1">Brandada
+                    <input type="radio" name="auto" value="2">Guacamole
+                    <input type="radio" name="auto" value="3">Pate
+                    <br>
+                    <textarea type="text" rows="20" cols="50" placeholder="Escriba su consulta"></textarea><br><br>
+                    <input type="submit" value="Enviar" >
+                    <input type="reset" value="Borrar">
+                </fieldset>
             </section>
         </form>
     </section>
